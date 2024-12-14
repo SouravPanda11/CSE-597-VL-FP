@@ -16,6 +16,7 @@ For details on the PromptKD framework, refer to the original paper:
 <hr />
 
 ## Running
+These are instructions from the original repository.
 
 1. Create the environment and install Dassl.pytorch library. Please follow the instructions detailed in [INSTALL.md](docs/INSTALL.md).
 
@@ -71,7 +72,7 @@ sh scripts/promptkd/base2new_train.sh caltech101 1
 
 <hr>
 
-### Results
+### Replicated Results
 The project focused on replicating the results of the PromptKD framework on the Caltech-101 dataset in the base-to-novel generalization setting. The following results were obtained for the student model (CLIP ViT-B/16) trained and tested across three random seeds:
 
 **Training Phase (Base Classes):**
