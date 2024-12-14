@@ -97,7 +97,7 @@ For comparison, the reported results in the original PromptKD paper for Caltech-
 ### Notes
 1. **Dataset**: The project was limited to the Caltech-101 dataset. This is a smaller dataset with 101 object categories, making it distinct from the larger-scale experiments (e.g., ImageNet) in the original paper.
 2. **Output Files**: The output files generated during training and testing were too large to be hosted on GitHub. Instead, they have been uploaded to OneDrive and can be accessed using the following link:  
-   [Download Output Files](https://your-onedrive-link.com)  
+   [Download Output Files](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/sbp5911_psu_edu/EuboOqLDcK5FhDVOzbz7W1wBfiQC0gTceB5XZo6b4vR2Jw?e=5l1pbI)  
    Ensure you download these files for reproducibility and further analysis.
 3. **Modifications**:
    - The training and testing scripts were adapted to handle the Caltech-101 dataset and were executed for three seeds to ensure statistical significance.
