@@ -1,19 +1,21 @@
-# PromptKD: Unsupervised Prompt Distillation for Vision-Language Models 
+# PromptKD: Unsupervised Prompt Distillation for Vision-Language Models
 
-<!-- This is the official PyToch implementation for "PromptKD: Unsupervised Prompt Distillation for Vision-Language Models." (CVPR 2024) -->
+This repository contains the implementation of my course project, where I replicated the results of the PromptKD framework on the Caltech-101 dataset. PromptKD is a novel framework for unsupervised prompt learning in Vision-Language Models (VLMs). It distills the knowledge of a large teacher model (e.g., CLIP ViT-L/14) into a smaller student model (e.g., CLIP ViT-B/16) using unlabeled data from the target domain. 
 
+In this project, I focused exclusively on the base-to-novel generalization task using the Caltech-101 dataset, adapting the PromptKD pipeline for this smaller dataset. My implementation includes training and testing scripts, modified configuration files, and analysis of results across three random seeds.
 
-> [**PromptKD: Unsupervised Prompt Distillation for Vision-Language Models**]() <br>
-> Zheng Li, Xiang Li#, Xinyi Fu, Xin Zhang, Weiqiang Wang, Shuo Chen, Jian Yang#. <br>
-> Nankai University, Ant Group, RIKEN <br>
-> CVPR 2024 <br>
-> [[Paper](https://arxiv.org/abs/2403.02781)] [[Project Page](https://zhengli97.github.io/PromptKD)]
+Key features of PromptKD:
+- **Teacher Prompt Training**: Pre-train a large teacher model to generate high-quality text features.
+- **Student Prompt Distillation**: Train a smaller student model using knowledge distilled from the teacher.
+- **Base-to-Novel Generalization**: Evaluate the student's ability to generalize from base classes to novel classes without direct supervision.
+
+For details on the PromptKD framework, refer to the original paper:  
+[**PromptKD: Unsupervised Prompt Distillation for Vision-Language Models**](https://arxiv.org/abs/2403.02781)
+[Project Page](https://zhengli97.github.io/PromptKD)
 
 <hr />
 
 ## Running
-
-### Preliminary
 
 1. Create the environment and install Dassl.pytorch library. Please follow the instructions detailed in [INSTALL.md](docs/INSTALL.md).
 
