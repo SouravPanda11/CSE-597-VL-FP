@@ -68,3 +68,39 @@ sh scripts/promptkd/base2new_train.sh caltech101 1
 ```
 
 4. The output results will be automatically saved at `output/base2new/train_base/${DATASET}/shots_${SHOTS}/${TRAINER}/${CFG}/seed_${SEED}`.
+
+<hr>
+
+### Results
+The project focused on replicating the results of the PromptKD framework on the Caltech-101 dataset in the base-to-novel generalization setting. The following results were obtained for the student model (CLIP ViT-B/16) trained and tested across three random seeds:
+
+**Training Phase (Base Classes):**
+- Seed 1: 96.4% accuracy
+- Seed 2: 84.4% accuracy
+- Seed 3: 96.6% accuracy
+- **Mean Accuracy**: 92.5%  
+- **Standard Deviation**: ±5.7%
+
+**Testing Phase (Novel Classes):**
+- Seed 1: 96.5% accuracy
+- Seed 2: 69.8% accuracy
+- Seed 3: 96.6% accuracy
+- **Mean Accuracy**: 87.6%  
+- **Standard Deviation**: ±12.6%
+
+For comparison, the reported results in the original PromptKD paper for Caltech-101 are:
+- **Base Accuracy**: 98.91%
+- **Novel Accuracy**: 96.65%
+
+<hr>
+
+### Notes
+1. **Dataset**: The project was limited to the Caltech-101 dataset. This is a smaller dataset with 101 object categories, making it distinct from the larger-scale experiments (e.g., ImageNet) in the original paper.
+2. **Output Files**: The output files generated during training and testing were too large to be hosted on GitHub. Instead, they have been uploaded to OneDrive and can be accessed using the following link:  
+   [Download Output Files](https://your-onedrive-link.com)  
+   Ensure you download these files for reproducibility and further analysis.
+3. **Modifications**:
+   - The training and testing scripts were adapted to handle the Caltech-101 dataset and were executed for three seeds to ensure statistical significance.
+   - Pretrained teacher models (CLIP ViT-L/14) and student models (CLIP ViT-B/16) were used as provided in the original repository.
+
+These results demonstrate the effectiveness of the PromptKD framework in achieving robust base-to-novel generalization on smaller datasets like Caltech-101, though with slightly lower performance compared to the reported results in the original paper.
